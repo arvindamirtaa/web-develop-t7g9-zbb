@@ -1,0 +1,195 @@
+*{
+    box-sizing: border-box;
+}
+/* 
+main page style */
+#main-heading h1
+{
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 40pt;
+    color: red;
+}
+
+#navigation h2
+{
+    font-family:'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-size: 25pt;
+    color:blue;
+}
+
+#special-offers h3
+{
+    font-family:'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-size: 25pt;
+    color:#e8042c;
+}
+
+#main-content-area h4
+{
+    font-family:'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-size: 25pt;
+    color:#e8042c;
+}
+
+#address-map 
+{
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    font-variant:normal;
+    font-size: 20pt;
+    color:#0472e8;
+}
+
+/* general informataion page styles */
+
+#general-heading h1
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-weight:700;
+    font-variant: normal;
+    font-size: 25pt;
+    color:blue;
+}
+
+.opening-hours
+{
+    font-family:'Times New Roman', Times, serif;
+    font-style: bold;
+    font-variant:normal;
+    font-size: 15pt;
+    color:#c00b32;
+}
+
+.timings, .services-list
+{
+    font-family:'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant:normal;
+    font-size: 15pt;
+    color: orangered;
+}
+
+.contact-information
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-size: 10pt;
+    color:rgb(43, 0, 255)
+}
+
+
+.Limitedoffers, .other-services
+{
+    font-family:'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 20pt;
+    color:#1500ff;
+}
+/* 
+rides page style */
+
+#rides-and-attractions h1
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-weight:bolder;
+    font-size: 40pt;
+    color: #042c84;
+}
+
+#major-attractions
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-weight:bold;
+    font-size: 15pt;
+    color: #042c84;
+}
+
+.main-rides
+{
+    font-family:'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 15pt;
+    color:rgb(153, 4, 247, 1)
+}
+
+.other-experiences
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-weight:normal;
+    font-size: 15pt;
+    color: #042c84;
+}
+
+.other-experiences-info
+{
+    font-family:'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 15pt;
+    color:rgb(212, 29, 32, 1);
+}
+
+#other-rides
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-weight:normal;
+    font-size: 15pt;
+    color:rgb(153, 4, 247, 1)
+}
+
+/* tickets page style */
+
+#tickets h1
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 45pt;
+    color: #FFD700;
+}
+
+#group-pass
+{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20pt;
+    font-weight: 700;
+    color: darkgreen;
+}
+
+.book-tickets
+{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15pt;
+    font-weight: 700;
+    color:dodgerblue;
+}
+
+footer.footer {
+    height: 40pt;
+    width: 100%;
+    background-color: #333333;
+}
+
+p.copyright {
+    color: #fff;
+    line-height: 20pt;
+    font-size: 1em;
+}
