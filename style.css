@@ -1,15 +1,168 @@
 *{
     box-sizing: border-box;
 }
+
+
+header { grid-area: header; }
+
+
+header{
+    background:#f5f2d0;
+    border-radius: 10px;;
+    border: 1px solid white;
+    text-align:center;
+    width:100%;
+    height: 200px;;
+    position: relative;
+    margin: 1px;
+}
+
+.logo
+{
+    position: relative;
+    right: 600px;
+    bottom: 380px;
+}
+
+#social-links
+{
+    position: relative;
+    margin-left: 1200px;
+    bottom: 180px;
+}
+
+.fb
+{
+    margin-left: 10px;
+
+    bottom: 180px;
+}
+
+
+/* navigation list */
+
+nav { grid-area: nav; }
+
+nav{
+    background:GREY;
+    border-radius: 10px;
+    border: solid white;
+    text-align:center;
+    width:100%;   
+}
+
+nav ol{
+    border:1px solid white;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+nav li{
+    display:inline;
+    border: 0px solid white;
+    border-radius: 3px;;
+    padding:1px;
+}
+
+nav li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:italic;
+    text-decoration: none;
+    font-variant:normal;
+    font-weight: normal;
+    font-size: 10pt;
+    color:hsl(0,0%,255%);
+    display:inline-block;
+    padding:1px;
+} 
+
+/*
+background */
+body
+{
+    background-image: url("/Pictures/background.jpg");
+    background-color: #cce4a7;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.roller
+{
+    border: 0px;
+    opacity: 90%;
+    position: relative;
+    bottom: 700px;
+    align-content: center;
+}
+
+/* 
+heading */
+#main-content-area h4 
+{
+    border: 0px solid white;
+    text-align:left;
+    /* width:100%; */
+    height: 10px;;
+}
+
+/* Offer section */
+#special-offers
+{
+    border: 2px solid #ffbc04;
+    background-image: url(https://c.tenor.com/_yndIq235YwAAAAi/terrabyt-terrabyt-offer.gif);
+    background-position: center;
+    background-color: #ffbc04;
+    background-size: cover;
+    opacity: 100%;
+    text-align: center;
+    padding-top: 150px;
+    height: 300px;
+    position:relative;
+    right:10px;
+    bottom: 1350px;
+    float:right
+}
+
+.map
+{
+    border: 5px solid black;
+    border-radius: 1%;
+    width: fit-content;
+    height: max-content;
+    position: relative;
+    opacity: 90%;
+}
+
+.center
+{
+    margin-left: 450px;
+}
+
+.left
+{
+    margin-left: 280px;
+} 
+
+.right
+{
+    margin-left: 750px;
+    position: relative;
+    bottom: 300px;
+} 
+
 /* 
 main page style */
 #main-heading h1
 {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:cursive;
     font-style: normal;
     font-variant: normal;
     font-weight: bold;
-    font-size: 40pt;
+    font-size: 60pt;
     color: red;
 }
 
@@ -33,20 +186,36 @@ main page style */
 
 #main-content-area h4
 {
-    font-family:'Times New Roman', Times, serif;
-    font-style: normal;
+    font-family:Luminari, fantasy;
+    font-style:normal;
     font-variant: normal;
-    font-size: 25pt;
-    color:#e8042c;
+    font-size: 55pt;
+    color:yellow;
 }
 
-#address-map 
+#main-content-area p
 {
-    font-family:'Times New Roman', Times, serif;
+    border: 2px;
+    width: 60%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    font-size: 15pt;
+    text-align: left;
+   
+}
+
+#address-map .address
+{
+    border: 1px;
+    background-color: white;
+    width: fit-content;
+    opacity: 70%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
     font-variant:normal;
     font-size: 20pt;
     color:#0472e8;
+    text-align: center;
 }
 
 /* general informataion page styles */
@@ -63,16 +232,26 @@ main page style */
 
 .opening-hours
 {
-    font-family:'Times New Roman', Times, serif;
-    font-style: bold;
-    font-variant:normal;
-    font-size: 15pt;
-    color:#c00b32;
+
+    border: 2px solid black;
+    width:fit-content ;
+    height: 300px;
+    background-image: url(https://c.tenor.com/I7heCKnZrnkAAAAC/open.gif);
+    background-color: black;
+    background-repeat: no-repeat;
+    opacity: 80%;
+    
 }
 
-.timings, .services-list
+.timings
 {
-    font-family:'Times New Roman', Times, serif;
+    position: relative;
+    top: 120px;
+}
+
+.timings
+{
+    font-family:URW Chancery L, cursive;
     font-style: normal;
     font-variant:normal;
     font-size: 15pt;
@@ -87,16 +266,59 @@ main page style */
     color:rgb(43, 0, 255)
 }
 
-
-.Limitedoffers, .other-services
+.other-services h3
 {
-    font-family:'Times New Roman', Times, serif;
+    border: 0px;
+    position: relative;
+    left:550px;
+    bottom: 300px;
+    font-family:Apple Chancery, cursive	;
     font-style: normal;
     font-variant: normal;
     font-weight: bold;
-    font-size: 20pt;
-    color:#1500ff;
+    font-size: 25pt;
+    color:#ff8800;
 }
+
+.services-list
+{
+    border: 0px;
+    background-color: #3c5464;
+    opacity: 90%;
+    width: 700px;
+    text-align:left;
+    position: relative;
+    bottom: 300px;
+    left: 700px;
+
+    font-family:URW Chancery L, cursive;
+    font-style: normal;
+    font-variant:normal;
+    font-size: 15pt;
+    color: white;
+}
+
+.services-image
+{
+    position:relative;
+    bottom: 150px;
+    left: 200px;
+}
+
+
+.phone
+{
+    color: white;
+    font-size: 20pt;
+}
+
+.email
+{
+
+    color: white;
+    font-size: 20pt;
+}
+
 /* 
 rides page style */
 
@@ -156,35 +378,15 @@ rides page style */
     color:rgb(153, 4, 247, 1)
 }
 
-/* tickets page style */
 
-#tickets h1
-{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 45pt;
-    color: #FFD700;
-}
-
-#group-pass
-{
-    font-family:'Times New Roman', Times, serif;
-    font-size: 20pt;
-    font-weight: 700;
-    color: darkgreen;
-}
-
-.book-tickets
-{
-    font-family:'Times New Roman', Times, serif;
-    font-size: 15pt;
-    font-weight: 700;
-    color:dodgerblue;
-}
-
+/* 
+footer */
 footer.footer {
-    height: 40pt;
-    width: 100%;
+    position: relative;
+    top: 100px;
+    right: 8px;;
+    height: 70pt;
+    width: 1440px;
     background-color: #333333;
 }
 
@@ -192,4 +394,9 @@ p.copyright {
     color: #fff;
     line-height: 20pt;
     font-size: 1em;
+}
+
+.address
+{
+    color: white;
 }
