@@ -95,7 +95,7 @@ body
     border: 0px;
     opacity: 90%;
     position: relative;
-    bottom: 700px;
+    /* bottom: 700px; */
     align-content: center;
 }
 
@@ -112,7 +112,7 @@ heading */
 /* Offer section */
 #special-offers
 {
-    border: 2px solid #ffbc04;
+    /* border: 2px solid #ffbc04; */
     background-image: url(https://c.tenor.com/_yndIq235YwAAAAi/terrabyt-terrabyt-offer.gif);
     background-position: center;
     background-color: #ffbc04;
@@ -120,11 +120,9 @@ heading */
     opacity: 100%;
     text-align: center;
     padding-top: 150px;
-    height: 300px;
-    position:relative;
-    right:10px;
-    bottom: 1350px;
-    float:right
+    position: relative;
+    margin-top: -350px;
+    float: right;
 }
 
 .map
@@ -136,23 +134,6 @@ heading */
     position: relative;
     opacity: 90%;
 }
-
-.center
-{
-    margin-left: 450px;
-}
-
-.left
-{
-    margin-left: 280px;
-} 
-
-.right
-{
-    margin-left: 750px;
-    position: relative;
-    bottom: 300px;
-} 
 
 /* 
 main page style */
@@ -184,6 +165,16 @@ main page style */
     color:#e8042c;
 }
 
+#main-content-text
+{
+    width: 60%;
+}
+
+#main-content-offers
+{
+    width: %;
+}
+
 #main-content-area h4
 {
     font-family:Luminari, fantasy;
@@ -196,7 +187,6 @@ main page style */
 #main-content-area p
 {
     border: 2px;
-    width: 60%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color:white;
     font-size: 15pt;
@@ -386,7 +376,9 @@ footer.footer {
     top: 100px;
     right: 8px;;
     height: 70pt;
-    width: 1440px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
     background-color: #333333;
 }
 
