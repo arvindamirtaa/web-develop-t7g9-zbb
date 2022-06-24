@@ -95,7 +95,9 @@ footer.footer {
     top: 100px;
     right: 8px;;
     height: 70pt;
-    width: 1440px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
     background-color: #333333;
 }
 
