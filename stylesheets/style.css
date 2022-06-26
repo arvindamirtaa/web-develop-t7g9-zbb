@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Corben:wght@700&display=swap');
+
 *{
     box-sizing: border-box;
 }
@@ -6,89 +8,42 @@
 header { grid-area: header; }
 
 
-header{
-    background:#f5f2d0;
-    border-radius: 10px;;
-    border: 1px solid white;
-    text-align:center;
-    width:100%;
-    height: 200px;;
-    position: relative;
-    margin: 1px;
-}
 
-.logo
-{
-    position: relative;
-    right: 600px;
-    bottom: 380px;
-}
 
-#social-links
-{
-    position: relative;
-    margin-left: 1200px;
-    bottom: 180px;
-}
-
-.fb
-{
-    margin-left: 10px;
-
-    bottom: 180px;
-}
 
 
 /* navigation list */
 
 nav { grid-area: nav; }
 
-nav{
-    background:GREY;
-    border-radius: 10px;
-    border: solid white;
-    text-align:center;
-    width:100%;   
-}
 
-nav ol{
-    border:1px solid white;
-    border-width:1px 0;
-    list-style:none;
-    margin:0;
-    padding:0;
-    text-align:center;
-}
-
-nav li{
-    display:inline;
-    border: 0px solid white;
-    border-radius: 3px;;
-    padding:1px;
-}
-
-nav li a {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style:italic;
-    text-decoration: none;
-    font-variant:normal;
-    font-weight: normal;
-    font-size: 10pt;
-    color:hsl(0,0%,255%);
-    display:inline-block;
-    padding:1px;
-} 
 
 /*
 background */
+/*Inspiration: https://codepen.io/P1N2O/pen/pyBNzX */
 body
 {
-    background-image: url("/Pictures/background.jpg");
-    background-color: #cce4a7;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    
     background-position:center;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size:400% 400%;
 }
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 .roller
 {
@@ -96,9 +51,12 @@ body
     opacity: 90%;
     position: relative;
     /* bottom: 700px; */
-    align-content: center;
+    text-align: center;
 }
-
+#pics{
+    display: flex;
+    justify-content: space-around;
+}
 /* 
 heading */
 #main-content-area h4 
@@ -106,7 +64,7 @@ heading */
     border: 0px solid white;
     text-align:left;
     /* width:100%; */
-    height: 10px;;
+    height: 10px;
 }
 
 /* Offer section */
@@ -133,6 +91,8 @@ heading */
     height: max-content;
     position: relative;
     opacity: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* 
@@ -149,7 +109,7 @@ main page style */
 
 #navigation h2
 {
-    font-family:'Times New Roman', Times, serif;
+    font-family:'Corben','Times New Roman', Times, serif;
     font-style: normal;
     font-variant: normal;
     font-size: 25pt;
@@ -168,6 +128,7 @@ main page style */
 #main-content-text
 {
     width: 60%;
+
 }
 
 #main-content-offers
@@ -177,13 +138,32 @@ main page style */
 
 #main-content-area h4
 {
-    font-family:Luminari, fantasy;
+    margin-top: 20px;
+    margin-bottom: 130px;
+    font-family:Corben,Luminari, fantasy;
     font-style:normal;
     font-variant: normal;
     font-size: 55pt;
     color:yellow;
+
+    animation: 5s anim-flipX ease infinite;
+    
 }
 
+  @keyframes anim-flipX {
+    0% {
+      opacity: 0;
+      transform: rotateX(90def);
+    }
+    50% {
+      opacity: 0.5;
+      transform: rotateX(720deg);
+    }
+    100% {
+      opacity: 1;
+      transform: rotateX(720deg);
+    }
+  }
 #main-content-area p
 {
     border: 2px;
@@ -222,7 +202,7 @@ main page style */
 
 .opening-hours
 {
-
+    margin-top: 20px;
     border: 2px solid black;
     width:fit-content ;
     height: 300px;
@@ -230,6 +210,7 @@ main page style */
     background-color: black;
     background-repeat: no-repeat;
     opacity: 80%;
+    border-radius: 10px;
     
 }
 
@@ -367,28 +348,25 @@ rides page style */
     font-size: 15pt;
     color:rgb(153, 4, 247, 1)
 }
-
-
-/* 
-footer */
-footer.footer {
-    position: relative;
-    top: 100px;
-    right: 8px;;
-    height: 70pt;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    background-color: #333333;
+.contact-information{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform .3s;
 }
 
-p.copyright {
-    color: #fff;
-    line-height: 20pt;
-    font-size: 1em;
+.contact-information img:hover{
+    transform: scale(1.25); 
 }
 
-.address
-{
-    color: white;
+#address-map .address{
+    margin: 5px auto;
+    
+}
+#address-map .map{
+    margin-top: 20px;
+}
+#address-map a{
+    text-decoration: none;
 }

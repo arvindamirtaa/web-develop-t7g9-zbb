@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Corben:wght@700&family=Roboto:wght@300&display=swap');
+
 *{
     box-sizing: border-box;
 }
@@ -6,56 +8,11 @@
 header { grid-area: header; }
 
 
-header{
-    background:#f5f2d0;
-    border-radius: 10px;;
-    border: 1px solid white;
-    text-align:center;
-    width:100%;
-    height: 200px;;
-    position: relative;
-    margin: 1px;
-}
 
 /* navigation list */
 
 nav { grid-area: nav; }
 
-nav{
-    background:GREY;
-    border-radius: 10px;
-    border: solid white;
-    text-align:center;
-    width:100%;   
-}
-
-nav ol{
-    border:1px solid white;
-    border-width:1px 0;
-    list-style:none;
-    margin:0;
-    padding:0;
-    text-align:center;
-}
-
-nav li{
-    display:inline;
-    border: 0px solid white;
-    border-radius: 3px;;
-    padding:1px;
-}
-
-nav li a {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style:italic;
-    text-decoration: none;
-    font-variant:normal;
-    font-weight: normal;
-    font-size: 10pt;
-    color:hsl(0,0%,255%);
-    display:inline-block;
-    padding:1px;
-} 
 
 .logo
 {
@@ -80,7 +37,7 @@ nav li a {
 
 #main-heading h1
 {
-    font-family:cursive;
+    font-family:'cursive';
     font-style: normal;
     font-variant: normal;
     font-weight: bold;
@@ -88,39 +45,18 @@ nav li a {
     color: red;
 }
 
-/* 
-footer */
-footer.footer {
-    position: relative;
-    top: 100px;
-    right: 8px;;
-    height: 70pt;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    background-color: #333333;
-}
 
-p.copyright {
-    color: #fff;
-    line-height: 20pt;
-    font-size: 1em;
-}
-
-.address
-{
-    color: white;
-}
 
 #major-attractions
 {
+    font-family: 'Corben';
     font-size: 35pt;
     text-align: center;
 }
 
 .rollercoaster
 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Roboto','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: black;
    margin-left: 150px;
 }
@@ -172,7 +108,7 @@ p.copyright {
 
 .bumper-cars, .vertigo, .typhoon, .super-shot, .frenzy
 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Roboto', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 10px;
     margin-left: 150px;
 
@@ -196,7 +132,7 @@ p.copyright {
   
 .vertigo
 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+    font-family: 'Roboto','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
 }
 
 .typhoon:hover
@@ -261,6 +197,7 @@ p.copyright {
     position: relative;
     bottom: 600px;
     font-size: 40pt;
+    font-family: 'Corben';
 }
 
 .other-experiences-info p
@@ -269,6 +206,7 @@ p.copyright {
     position: relative;
     bottom: 550px;
     font-size: 20pt;
+    font-family: 'Roboto';
 }
 
 .banana-jet, .ferris-wheel, .water-rides
@@ -430,12 +368,24 @@ p.copyright {
 {
     position: relative;
     font-size: 30pt;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    bottom: 600px;
+    font-family:'Corben','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    bottom: 400px;
+    text-align: center;
+    
 }
 
 .ride-gif
 {
+    margin:0;
     position: relative;
-    bottom: 500px;
+    bottom: 200px;
+    text-align: center;
+}
+
+#ytVideo{
+    position: relative;
+    padding-bottom: 56.25%;
+
+    margin: 0 200px;
+
 }
