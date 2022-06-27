@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Corben:wght@700&family=Roboto:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+
+header { grid-area: header; }
+
+
+
+/* navigation list */
+
+nav { grid-area: nav; }
+
+
+.logo
+{
+    position: relative;
+    right: 600px;
+    bottom: 380px;
+}
+
+#social-links
+{
+    position: relative;
+    margin-left: 1200px;
+    bottom: 180px;
+}
+
+.fb
+{
+    margin-left: 10px;
+
+    bottom: 180px;
+}
+
+#main-heading h1
+{
+    font-family:'cursive';
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 60pt;
+    color: red;
+}
+
+
+
+#major-attractions
+{
+    font-family: 'Corben';
+    font-size: 35pt;
+    text-align: center;
+}
+
+.rollercoaster
+{
+    font-family: 'Roboto','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+   margin-left: 150px;
+}
+
+.rollercoaster, .bumper-cars, .vertigo, .typhoon, .super-shot, .frenzy
+{
+    padding: 1rem;
+    width: 420px;
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+      0 5px 15px 0 rgba(0,0,0,0.08);
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    
+    border-left: 0 solid #00ff99;
+    transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
+}
+  
+  .rollercoaster:hover
+{
+    padding-left: 0.6rem;
+    border-left: 0.6em solid #00ff99;
+}
+  
+  .rollercoaster > :first-child
+{
+    margin-top: 0;
+}
+  
+  .rollercoaster > :last-child 
+{
+    margin-bottom: 0;
+}
+
+.bumper-cars:hover
+{
+    padding-left: 0.6rem;
+    border-left: 0.6em solid #00ff99;
+}
+  
+  .bumper-cars > :first-child
+{
+    margin-top: 0;
+}
+  
+  .bumper-cars > :last-child 
+{
+    margin-bottom: 0;
+}
+
+.bumper-cars, .vertigo, .typhoon, .super-shot, .frenzy
+{
+    font-family: 'Roboto', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+    margin-left: 150px;
+
+}
+
+.vertigo:hover
+{
+    padding-left: 0.6rem;
+    border-left: 0.6em solid #00ff99;
+}
+
+.vertigo > :first-child
+{
+    margin-top: 0;
+}
+  
+  .vertigo > :last-child 
+{
+    margin-bottom: 0;
+}
+  
+.vertigo
+{
+    font-family: 'Roboto','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+}
+
+.typhoon:hover
+{
+    padding-left: 0.6rem;
+    border-left: 0.6em solid #00ff99;
+}
+  
+  .typhoon > :first-child
+{
+    margin-top: 0;
+}
+  
+  .typhoon > :last-child 
+{
+    margin-bottom: 0;
+}
+
+.super-shot:hover
+{
+    padding-left: 0.6rem;
+    border-left: 0.6em solid #00ff99;
+}
+  
+  .super-shot > :first-child
+{
+    margin-top: 0;
+}
+  
+  .super-shot > :last-child 
+{
+    margin-bottom: 0;
+}
+
+
+.frenzy:hover
+{
+    padding-left: 0.6rem;
+    border-left: 0.6em solid #00ff99;
+}
+  
+.frenzy > :first-child
+{
+    margin-top: 0;
+}
+  
+  .frenzy > :last-child 
+{
+    margin-bottom: 0;
+}
+
+.typhoon, .super-shot, .frenzy
+{
+    position: relative;
+    bottom: 670px;
+    margin-left: 800px;
+}
+
+.other-experiences h2
+{
+    text-align: center;
+    position: relative;
+    bottom: 600px;
+    font-size: 40pt;
+    font-family: 'Corben';
+}
+
+.other-experiences-info p
+{
+    text-align: center;
+    position: relative;
+    bottom: 550px;
+    font-size: 20pt;
+    font-family: 'Roboto';
+}
+
+.banana-jet, .ferris-wheel, .water-rides
+{
+    padding: 1rem;
+    width: 420px;
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+      0 5px 15px 0 rgba(0,0,0,0.08);
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    
+    border-left: 0 solid #00ff99;
+    transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    bottom: 400px;
+    margin-left: 150px;
+
+}
+  
+.banana-jet:hover
+{
+    padding-left: 0.6rem;
+    border-left: 0.6em solid #00ff99;
+}
+  
+.banana-jet
+{
+    margin-top: 0;
+}
+  
+.banana-jet
+{
+    margin-bottom: 0;
+}
+
+.ferris-wheel:hover
+{
+    padding-left: 0.6rem;
+    border-left: 0.6em solid #00ff99;
+}
+
+.ferris-wheel
+{
+    margin-top: 0;
+}
+  
+.ferris-wheel
+{
+    margin-bottom: 0;
+}
+
+.ferris-wheel
+{
+    margin-top: 10px;
+}
+
+.water-rides:hover
+{
+    padding-left: 0.6rem;
+    border-left: 0.6em solid #00ff99;
+}
+  
+.water-rides
+{
+    margin-top: 0;
+}
+  
+.water-rides
+{
+    margin-bottom: 0;
+}
+
+.water-rides
+{
+    margin-top: 10px;
+}
+
+
+.train-rides, .horror-house, .mirror-maze
+{
+    padding: 1rem;
+    width: 420px;
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+      0 5px 15px 0 rgba(0,0,0,0.08);
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    
+    border-left: 0 solid #00ff99;
+    transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    margin-left: 700px;
+    bottom: 1010px;
+
+}
+
+.train-rides:hover
+{
+    padding-left: 0.6rem;
+    border-left: 0.6em solid #00ff99;
+}
+  
+.train-rides
+{
+    margin-top: 0;
+}
+  
+.train-rides
+{
+    margin-bottom: 0;
+}
+  
+.horror-house:hover
+{
+    padding-left: 0.6rem;
+    border-left: 0.6em solid #00ff99;
+}
+  
+.horror-house
+{
+    margin-top: 0;
+}
+  
+.horror-house
+{
+    margin-bottom: 0;
+}
+
+.horror-house
+{
+    margin-top: 10px;
+}
+  
+.mirror-maze:hover
+{
+    padding-left: 0.6rem;
+    border-left: 0.6em solid #00ff99;
+}
+  
+.mirror-maze
+{
+    margin-top: 0;
+}
+  
+.mirror-maze
+{
+    margin-bottom: 0;
+}
+
+.mirror-maze
+{
+    margin-top: 10px;
+}
+
+.ride-text
+{
+    position: relative;
+    font-size: 30pt;
+    font-family:'Corben','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    bottom: 400px;
+    text-align: center;
+    
+}
+
+.ride-gif
+{
+    margin:0;
+    position: relative;
+    bottom: 200px;
+    text-align: center;
+}
+
+#ytVideo{
+    position: relative;
+    padding-bottom: 56.25%;
+
+    margin: 0 200px;
+
+}

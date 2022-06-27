@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Corben:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+
+header { grid-area: header; }
+
+
+
+
+
+
+/* navigation list */
+
+nav { grid-area: nav; }
+
+
+
+/*
+background */
+/*Inspiration: https://codepen.io/P1N2O/pen/pyBNzX */
+body
+{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:400% 400%;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.roller
+{
+    border: 0px;
+    opacity: 90%;
+    position: relative;
+    /* bottom: 700px; */
+    text-align: center;
+}
+#pics{
+    display: flex;
+    justify-content: space-around;
+}
+/* 
+heading */
+#main-content-area h4 
+{
+    border: 0px solid white;
+    text-align:left;
+    /* width:100%; */
+    height: 10px;
+}
+
+/* Offer section */
+#special-offers
+{
+    /* border: 2px solid #ffbc04; */
+    background-image: url(https://c.tenor.com/_yndIq235YwAAAAi/terrabyt-terrabyt-offer.gif);
+    background-position: center;
+    background-color: #ffbc04;
+    background-size: cover;
+    opacity: 100%;
+    text-align: center;
+    padding-top: 150px;
+    position: relative;
+    margin-top: -350px;
+    float: right;
+}
+
+.map
+{
+    border: 5px solid black;
+    border-radius: 1%;
+    width: fit-content;
+    height: max-content;
+    position: relative;
+    opacity: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 
+main page style */
+#main-heading h1
+{
+    font-family:cursive;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 60pt;
+    color: red;
+}
+
+#navigation h2
+{
+    font-family:'Corben','Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-size: 25pt;
+    color:blue;
+}
+
+#special-offers h3
+{
+    font-family:'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-size: 25pt;
+    color:#e8042c;
+}
+
+#main-content-text
+{
+    width: 60%;
+
+}
+
+#main-content-offers
+{
+    width: %;
+}
+
+#main-content-area h4
+{
+    margin-top: 20px;
+    margin-bottom: 130px;
+    font-family:Corben,Luminari, fantasy;
+    font-style:normal;
+    font-variant: normal;
+    font-size: 55pt;
+    color:yellow;
+
+    animation: 5s anim-flipX ease infinite;
+    
+}
+
+  @keyframes anim-flipX {
+    0% {
+      opacity: 0;
+      transform: rotateX(90def);
+    }
+    50% {
+      opacity: 0.5;
+      transform: rotateX(720deg);
+    }
+    100% {
+      opacity: 1;
+      transform: rotateX(720deg);
+    }
+  }
+#main-content-area p
+{
+    border: 2px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    font-size: 15pt;
+    text-align: left;
+   
+}
+
+#address-map .address
+{
+    border: 1px;
+    background-color: white;
+    width: fit-content;
+    opacity: 70%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-variant:normal;
+    font-size: 20pt;
+    color:#0472e8;
+    text-align: center;
+}
+
+/* general informataion page styles */
+
+#general-heading h1
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-weight:700;
+    font-variant: normal;
+    font-size: 25pt;
+    color:blue;
+}
+
+.opening-hours
+{
+    margin-top: 20px;
+    border: 2px solid black;
+    width:fit-content ;
+    height: 300px;
+    background-image: url(https://c.tenor.com/I7heCKnZrnkAAAAC/open.gif);
+    background-color: black;
+    background-repeat: no-repeat;
+    opacity: 80%;
+    border-radius: 10px;
+    
+}
+
+.timings
+{
+    position: relative;
+    top: 120px;
+}
+
+.timings
+{
+    font-family:URW Chancery L, cursive;
+    font-style: normal;
+    font-variant:normal;
+    font-size: 15pt;
+    color: orangered;
+}
+
+.contact-information
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-size: 10pt;
+    color:rgb(43, 0, 255)
+}
+
+.other-services h3
+{
+    border: 0px;
+    position: relative;
+    left:550px;
+    bottom: 300px;
+    font-family:Apple Chancery, cursive	;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 25pt;
+    color:#ff8800;
+}
+
+.services-list
+{
+    border: 0px;
+    background-color: #3c5464;
+    opacity: 90%;
+    width: 700px;
+    text-align:left;
+    position: relative;
+    bottom: 300px;
+    left: 700px;
+
+    font-family:URW Chancery L, cursive;
+    font-style: normal;
+    font-variant:normal;
+    font-size: 15pt;
+    color: white;
+}
+
+.services-image
+{
+    position:relative;
+    bottom: 150px;
+    left: 200px;
+}
+
+
+.phone
+{
+    color: white;
+    font-size: 20pt;
+}
+
+.email
+{
+
+    color: white;
+    font-size: 20pt;
+}
+
+/* 
+rides page style */
+
+#rides-and-attractions h1
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-weight:bolder;
+    font-size: 40pt;
+    color: #042c84;
+}
+
+#major-attractions
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-weight:bold;
+    font-size: 15pt;
+    color: #042c84;
+}
+
+.main-rides
+{
+    font-family:'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 15pt;
+    color:rgb(153, 4, 247, 1)
+}
+
+.other-experiences
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-weight:normal;
+    font-size: 15pt;
+    color: #042c84;
+}
+
+.other-experiences-info
+{
+    font-family:'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 15pt;
+    color:rgb(212, 29, 32, 1);
+}
+
+#other-rides
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-weight:normal;
+    font-size: 15pt;
+    color:rgb(153, 4, 247, 1)
+}
+.contact-information{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform .3s;
+}
+
+.contact-information img:hover{
+    transform: scale(1.25); 
+}
+
+#address-map .address{
+    margin: 5px auto;
+    
+}
+#address-map .map{
+    margin-top: 20px;
+}
+#address-map a{
+    text-decoration: none;
+}
